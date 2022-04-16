@@ -4,7 +4,7 @@
 
 Markdown is a 'lightweight markup language that you can use to add formatting elements to plaintext text documents' \[1\]. This iOS Safari Extension will try to extract a readable version of the webpage you are currently viewing and present it to you as Markdown text.
 
-\[1\]\(https://www.markdownguide.org\)
+\[1\]\(https://www.markdownguide.org)
 
 ## Setup and Usage
 
