@@ -21,6 +21,7 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
+        "css" : [ "atom-one-light.min.css" ],
         "matches": [ "<all_urls>" ]
     }],
 

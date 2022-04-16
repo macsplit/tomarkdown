@@ -1,5 +1,13 @@
 # ToMarkdown
 
+## Introduction
+
+Markdown is a 'lightweight markup language that you can use to add formatting elements to plaintext text documents' \[1\]. This iOS Safari Extension will try to extract a readable version of the webpage you are currently viewing and present it to you as Markdown text.
+
+\[1\]\(https://www.markdownguide.org\)
+
+## Setup and Usage
+
 1. When the app is installed it will tell you to go to Settings.
 
 ![App](https://raw.githubusercontent.com/macsplit/tomarkdown/fea457956f9e60d621a3d71ff59e177790198ca9/images/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(5th%20generation)%20-%202022-04-15%20at%2018.36.36.png)
