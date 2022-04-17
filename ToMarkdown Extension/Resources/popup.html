@@ -6,7 +6,19 @@
     <script type="module" src="popup.js"></script>
 </head>
 <body>
-    <div class="convertButton" id="convertButton1">Convert</div>
-    <div class="convertButton" id="convertButton2">Linkless</div>
+    <div id="container">
+        <div class="contained">
+            <div class="convertButton" id="convertButton1">Convert</div>
+        </div>
+        <div class="contained">
+            <div class="linkOption">
+                <label class="switch">
+                <input id="includeLinks" type="checkbox" checked>
+                <span class="slider"></span>
+                </label>
+                <span class="linksLabel">Links</span>
+            ︎</div>
+        </div>
+    </div>
 </body>
 </html>

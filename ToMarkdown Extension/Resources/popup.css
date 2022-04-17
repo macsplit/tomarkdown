@@ -3,28 +3,37 @@
 }
 
 body {
-    /* background-color: rgb(199,199,204); */
-    width: 8em;
-    height: 6em;
 
     font-family: system-ui;
     text-align: center;
+
 }
+
 
 .convertPressed {
     background-color: rgb(255,204,0)!important;
 }
 
 
+#container {
+    margin-right:  auto;
+    margin-left: auto;
+    margin: 1em;
+    min-width: 18em;
+}
 
+.contained {
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  margin-top: 0.5em;
+  vertical-align: middle;
+}
 
 .convertButton {
-    padding: 0.5em 3em;
-    display: inline-block;
-    margin-left: 15%;
-    margin-right: 20%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 0.75em;
+
     border none;
     border-radius: 5em;
     
@@ -32,12 +41,81 @@ body {
     
     background-color: rgb(0,122,255);
     color: white;
+
+    height: 2em;
+    width: 5em;
+
 }
+
+.linkOption {
+    height: 2em;
+    width: 3em;
+    margin-right: 1.5em;
+}
+
+.linksLabel {
+    font-size: 10pt;
+    color: black;
+    display: block;
+    padding-top: 0.2em;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1.75em;
+}
+
+.switch input { 
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(209,209,214);
+  transition: .4s;
+  border-radius: 2em;
+  box-shadow: 0 0 0.2em gray;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.1em;
+  width: 1.1em;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: 0 0 0.2em gray;
+}
+
+input:checked + .slider {
+  background-color: rgb(52,199,89);
+}
+
+
+input:checked + .slider:before {
+  transform: translateX(1.2em);
+}
+
 
 @media (prefers-color-scheme: dark) {
     
     body {
-        /* background-color: rgb(72,72,74); */
+
     }
     
     .convertButton {
@@ -48,4 +126,19 @@ body {
     .convertPressed {
         background-color: rgb(255,214,10)!important;
     }
+
+
+    input:checked + .slider {
+      background-color: rgb(48,209,88);
+    }
+
+    .linksLabel {
+        color: white;
+    }
+
+    .slider {
+        background-color: rgb(58,58,60);
+    }
+
+
 }
