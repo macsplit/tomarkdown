@@ -35,8 +35,7 @@ Markdown is a 'lightweight markup language that you can use to add formatting el
 |Select the Extension and Tap Convert|          |          |
 |------------------------------------|----------|----------|
 | *iPad*                             | *iPhone* | *iPhone* |
-|![iPad](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1178.PNG)| 
-![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0226.PNG)|![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0228.PNG)|
+|![iPad](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1178.PNG)| ![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0226.PNG)|![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0228.PNG)|
 
 
 
