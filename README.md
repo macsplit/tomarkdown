@@ -6,36 +6,51 @@ Markdown is a 'lightweight markup language that you can use to add formatting el
 
 \[1\]\(https://www.markdownguide.org)
 
-## Setup and Usage
+## How to Install
 
-1. When the app is installed it will tell you to go to Settings.
+|Open the Settings App choose Safari and Extensions|
+|--------------------------------------------------|
+|![Settings](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1170.PNG)|
 
-![App](https://raw.githubusercontent.com/macsplit/tomarkdown/fea457956f9e60d621a3d71ff59e177790198ca9/images/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(5th%20generation)%20-%202022-04-15%20at%2018.36.36.png)
+|Choose the ToMarkdown Extension|
+|-------------------------------|
+|![Extension](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1171.PNG)|
 
-2. Settings
+|Enable the Extension|
+|--------------------|
+|![Enable](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1172.PNG)|
 
-Go to Safari Settings.
+|Allow access to All Websites|
+|----------------------------|
+|![Allow](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1173.PNG)|
 
-![Safari Settings](https://raw.githubusercontent.com/macsplit/tomarkdown/fea457956f9e60d621a3d71ff59e177790198ca9/images/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(5th%20generation)%20-%202022-04-15%20at%2018.36.51.png)
+# How To Use
 
-3. Give permission for the Extension to access All Websites.
+|Open a Website in Safari|          |
+|------------------------|----------|
+| *iPad*                 | *iPhone* |
+|![iPad](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1177.PNG)|![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0225.PNG)|
 
-![Extension Settings](https://raw.githubusercontent.com/macsplit/tomarkdown/fea457956f9e60d621a3d71ff59e177790198ca9/images/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(5th%20generation)%20-%202022-04-15%20at%2018.37.02.png)
 
-4. Open Safari
+|Select the Extension and Tap Convert|          |          |
+|------------------------------------|----------|----------|
+| *iPad*                             | *iPhone* | *iPhone* |
+| 
+![iPad](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1178.PNG)| 
+![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0226.PNG) 
+| 
+![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0228.PNG) 
+|
 
-![Safari](https://raw.githubusercontent.com/macsplit/tomarkdown/fea457956f9e60d621a3d71ff59e177790198ca9/images/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(5th%20generation)%20-%202022-04-15%20at%2018.37.34.png)
 
-5. Tap on the Menu Item, Tap the Convert button
 
-Alternatively Tap the Linkless conversion button
+|Tap the Converted Text              |
+|------------------------------------|
+|![Tap](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1179.PNG)|
 
-![Menu](https://raw.githubusercontent.com/macsplit/tomarkdown/fea457956f9e60d621a3d71ff59e177790198ca9/images/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(5th%20generation)%20-%202022-04-15%20at%2018.37.42.png)
+|Wait for the Popup and Copy to the Clipboard|
+|--------------------------------------------|
+|![Copy](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1180.PNG)|
 
-6. The page has been converted to Markdown
 
-![Converted](https://raw.githubusercontent.com/macsplit/tomarkdown/fea457956f9e60d621a3d71ff59e177790198ca9/images/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(5th%20generation)%20-%202022-04-15%20at%2018.37.51.png)
 
-7. Tap on the text then it can be copied to the Clipboard
-
-![Clipboard](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(5th%20generation)%20-%202022-04-15%20at%2018.37.57.png)
