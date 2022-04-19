@@ -23,13 +23,16 @@ currently viewing and present it to you as Markdown text.
 |--------------------------------------------------|
 |![Settings](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1170.PNG)|
 
+
 |Choose the ToMarkdown Extension|
 |-------------------------------|
 |![Extension](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1171.PNG)|
 
+
 |Enable the Extension|
 |--------------------|
 |![Enable](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1172.PNG)|
+
 
 |Allow access to All Websites|
 |----------------------------|
@@ -46,14 +49,13 @@ currently viewing and present it to you as Markdown text.
 |Tap ToMarkdown Icon   |Or Extension Icon |And Tap Convert Button|
 |----------------------|------------------|----------------------|
 | *iPad*               | *iPhone*         | *iPhone*             |
-|![iPad](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1178.PNG)| 
-![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0226.PNG)|![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0228.PNG)|
-
+|![iPad](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1178.PNG)|![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0226.PNG)|![iPhone](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_0228.PNG)|
 
 
 |Tap the Converted Text              |
 |------------------------------------|
 |![Tap](https://raw.githubusercontent.com/macsplit/tomarkdown/main/images/IMG_1179.PNG)|
+
 
 |Wait for the Popup and Copy to the Clipboard|
 |--------------------------------------------|
