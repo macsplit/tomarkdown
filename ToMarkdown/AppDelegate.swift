@@ -12,8 +12,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func setup() {
+        let version = UserDefaults.standard.value(forKey: "version_pref") as? String ?? "0"
+        
+        if (version == "0") {
+            
+            let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+            UserDefaults.standard.setValue( version, forKey: "version_pref")
+            
+            UIApplication.shared.open(URL.init(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: {_ in
+            })
+        }
+
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        setup()
         
         return true
     }
