@@ -24,7 +24,34 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     }
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        // Override point for customization.
+        
+        var AppGroup: String {
+            "group.uk.co.hanken.tomarkdown"
+        }
+
+        let defaults = UserDefaults(suiteName: AppGroup)!
+        
+        let version = defaults.value(forKey: "version_pref") as? String ?? "0"
+        
+        if (version == "0") {
+            
+            let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+            defaults.setValue( version, forKey: "version_pref")
+            
+            Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) {_ in
+                
+                let alert = UIAlertController(title: "Opening Settings...", message: "Go to Safari > Extensions", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {_ in
+                    UIApplication.shared.open(URL.init(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: {_ in
+                    })
+                }))
+                
+                self.present(alert, animated: false, completion: {
+                    
+                })
+            }
+        }
     }
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {

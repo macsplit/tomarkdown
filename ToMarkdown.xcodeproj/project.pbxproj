@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD2A6C8A2948ED3900503869 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD2A6C892948ED3900503869 /* Settings.bundle */; };
 		AD55CE4C2809746600CFEC56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55CE4B2809746600CFEC56 /* AppDelegate.swift */; };
 		AD55CE502809746600CFEC56 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = AD55CE4E2809746600CFEC56 /* Main.html */; };
 		AD55CE522809746600CFEC56 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD55CE512809746600CFEC56 /* Icon.png */; };
@@ -15,7 +16,7 @@
 		AD55CE582809746600CFEC56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55CE572809746600CFEC56 /* ViewController.swift */; };
 		AD55CE5B2809746600CFEC56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD55CE592809746600CFEC56 /* LaunchScreen.storyboard */; };
 		AD55CE5E2809746600CFEC56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD55CE5C2809746600CFEC56 /* Main.storyboard */; };
-		AD55CE662809746800CFEC56 /* ToMarkdown Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD55CE652809746800CFEC56 /* ToMarkdown Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD55CE662809746800CFEC56 /* ToMarkdown Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AD55CE652809746800CFEC56 /* ToMarkdown Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD55CE6B2809746800CFEC56 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55CE6A2809746800CFEC56 /* SafariWebExtensionHandler.swift */; };
 		AD55CE6E2809746800CFEC56 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = AD55CE6D2809746800CFEC56 /* _locales */; };
 		AD55CE702809746800CFEC56 /* images in Resources */ = {isa = PBXBuildFile; fileRef = AD55CE6F2809746800CFEC56 /* images */; };
@@ -40,20 +41,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AD55CE842809746800CFEC56 /* Embed App Extensions */ = {
+		AD55CE842809746800CFEC56 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				AD55CE662809746800CFEC56 /* ToMarkdown Extension.appex in Embed App Extensions */,
+				AD55CE662809746800CFEC56 /* ToMarkdown Extension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD2A6C892948ED3900503869 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		AD55CE482809746600CFEC56 /* ToMarkdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToMarkdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD55CE4B2809746600CFEC56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD55CE4F2809746600CFEC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		AD55CE7B2809746800CFEC56 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
 		AD55CE7D2809746800CFEC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD55CE892809985C00CFEC56 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		AD67082E2948F3DE0091398A /* ToMarkdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToMarkdown.entitlements; sourceTree = "<group>"; };
 		AD82C2982809DE33005FFFA7 /* ToMarkdown Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ToMarkdown Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +105,7 @@
 		AD55CE3F2809746500CFEC56 = {
 			isa = PBXGroup;
 			children = (
+				AD2A6C892948ED3900503869 /* Settings.bundle */,
 				AD55CE4A2809746600CFEC56 /* ToMarkdown */,
 				AD55CE692809746800CFEC56 /* ToMarkdown Extension */,
 				AD55CE492809746600CFEC56 /* Products */,
@@ -121,6 +125,7 @@
 		AD55CE4A2809746600CFEC56 /* ToMarkdown */ = {
 			isa = PBXGroup;
 			children = (
+				AD67082E2948F3DE0091398A /* ToMarkdown.entitlements */,
 				AD55CE4B2809746600CFEC56 /* AppDelegate.swift */,
 				AD55CE552809746600CFEC56 /* SceneDelegate.swift */,
 				AD55CE572809746600CFEC56 /* ViewController.swift */,
@@ -187,7 +192,7 @@
 				AD55CE442809746600CFEC56 /* Sources */,
 				AD55CE452809746600CFEC56 /* Frameworks */,
 				AD55CE462809746600CFEC56 /* Resources */,
-				AD55CE842809746800CFEC56 /* Embed App Extensions */,
+				AD55CE842809746800CFEC56 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -224,7 +229,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					AD55CE472809746600CFEC56 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -264,6 +269,7 @@
 				AD55CE502809746600CFEC56 /* Main.html in Resources */,
 				AD55CE7E2809746800CFEC56 /* Assets.xcassets in Resources */,
 				AD55CE542809746600CFEC56 /* Style.css in Resources */,
+				AD2A6C8A2948ED3900503869 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +468,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ToMarkdown Extension/ToMarkdown Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = PNJ9AX7795;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ToMarkdown Extension/Info.plist";
@@ -474,7 +480,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -495,7 +501,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ToMarkdown Extension/ToMarkdown Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = PNJ9AX7795;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ToMarkdown Extension/Info.plist";
@@ -507,7 +513,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -529,8 +535,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToMarkdown/ToMarkdown.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = PNJ9AX7795;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToMarkdown/Info.plist;
@@ -545,7 +552,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -566,8 +573,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToMarkdown/ToMarkdown.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = PNJ9AX7795;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToMarkdown/Info.plist;
@@ -582,7 +590,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,

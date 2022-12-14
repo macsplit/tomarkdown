@@ -2,14 +2,19 @@ var alreadyConverted = false;
 
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     
-    if (request.substring(0,7)=='convert' && !alreadyConverted) {
+    console.log(request)
+    
+    let server_url = request.url;
+    let action = request.request;
+    
+    if (action.substring(0,7)=='convert' && !alreadyConverted) {
         console.log('Requested convert!');
         alreadyConverted=true;
-        if (request=='convert1') {
-            convertToMarkdown(false);
+        if (action=='convert1') {
+            convertToMarkdown(false, server_url);
         }
-        if (request=='convert2') {
-            convertToMarkdown(true);
+        if (action=='convert2') {
+            convertToMarkdown(true, server_url);
         }
     }
     
@@ -17,20 +22,23 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     
 });
 
-function convertToMarkdown(linkless=false) {
+function convertToMarkdown(linkless=false, server_url) {
     var request=new XMLHttpRequest();
-    var herokuurl="https://urltomarkdown.herokuapp.com/";
     if (linkless) {
-        herokuurl += '?links=false';
+        server_url += '?links=false';
     }
+    
+    console.log(server_url);
     
     request.onreadystatechange=function()
     {
         if(request.readyState==4&&request.status==200) {
                 
             let text = '# ' + decodeURIComponent(request.getResponseHeader('X-Title')) +  '\n' + request.responseText;
-            document.documentElement.innerHTML = "<html><head></head><body><pre><code class='language-markdown' style='white-space: pre-wrap; word-wrap: break-word; font-size:12pt;'>"+text+"</code></pre></body></html>";
+            document.documentElement.innerHTML = "<html><head></head><body><pre><code id='urltomarkdownCodeBlock' class='language-markdown' style='width: 100%; height:100%; white-space: pre-wrap; word-wrap: break-word; font-size:12pt;'></code></pre></body></html>";
+            document.getElementById('urltomarkdownCodeBlock').appendChild(document.createTextNode(text));
 
+        
             var cssScript = document.createElement('style');
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 document.body.style.backgroundColor = 'black';
@@ -53,13 +61,14 @@ function convertToMarkdown(linkless=false) {
             var inlineScript4 = document.createTextNode("function waitForHighlighter(){if(typeof hljs!=='undefined') hljs.highlightAll(); else setTimeout(waitForHiglighter,100);} waitForHighlighter();");
             newScript4.appendChild(inlineScript4);
             document.body.appendChild(newScript4);
+            
             selectAllTextOnPage();
             
         }
         
     };
 
-    request.open("POST", herokuurl, true);
+    request.open("POST", server_url, true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     html=document.documentElement.innerHTML;
     requestUrl = "html="+encodeURIComponent(html)+"&url="+encodeURIComponent(window.location.href);
